@@ -1,0 +1,22 @@
+{
+  "name": "productivity-booster",
+  "version": "0.1.0",
+  "description": "An example browser extension for blocking distracting websites",
+  "repository": "https://github.com/areknawo/ProductivityBooster",
+  "author": "Arek Nawo <areknawo@areknawo.com> (https://areknawo.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+		"build": "parcel build [input.ts] --experimental-scope-hoisting --no-source-maps --public-url ./",
+		"watch": "parcel watch [input.ts] --public-url ./"
+	},
+  "dependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-xtrict": "^2.0.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-web-ext-tool": "^0.1.2",
+    "typescript": "^3.9.6",
+    "web-ext": "^4.3.0",
+    "webextension-polyfill-ts": "^0.19.0"
+  }
+}
